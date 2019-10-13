@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
+  <parameter name="MSSDIN" value="447386011969"/>
+  <parameter name="mSSDIN" value="447386013242"/>
+  <parameter name="PLATFORM_VERSION" value="7.0"/>
+  <parameter name="PLATFORM_NAME" value="Android"/>
+  <parameter name="DEVICE_NAME" value="ce11160b0a68301701"/>
+  <test thread-count="5" name="Test(failed)">
+    <classes>
+      <class name="PAYG_Simply.NoAlertsVOV">
+        <methods>
+          <include name="beforeTest"/>
+          <include name="beforeSuite"/>
+          <include name="DashboardTC"/>
+        </methods>
+      </class> <!-- PAYG_Simply.NoAlertsVOV -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->

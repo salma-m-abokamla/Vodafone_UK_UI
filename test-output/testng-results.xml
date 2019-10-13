@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Suite" duration-ms="69599" started-at="2019-10-13T12:48:14Z" finished-at="2019-10-13T12:49:23Z">
+    <groups>
+    </groups>
+    <test name="Test" duration-ms="69599" started-at="2019-10-13T12:48:14Z" finished-at="2019-10-13T12:49:23Z">
+      <class name="PAYG_Simply.NoAlertsVOV">
+        <test-method status="PASS" signature="beforeSuite(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:PAYG_Simply.NoAlertsVOV@56102e1c]" name="beforeSuite" is-config="true" duration-ms="50960" started-at="2019-10-13T12:47:23Z" finished-at="2019-10-13T12:48:14Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Android]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[ce11160b0a68301701]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[7.0]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeSuite -->
+        <test-method status="PASS" signature="beforeTest(java.lang.String)[pri:0, instance:PAYG_Simply.NoAlertsVOV@56102e1c]" name="beforeTest" is-config="true" duration-ms="60259" started-at="2019-10-13T12:48:14Z" finished-at="2019-10-13T12:49:14Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[447386011969]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeTest -->
+        <test-method status="PASS" signature="DashboardTC()[pri:0, instance:PAYG_Simply.NoAlertsVOV@56102e1c]" name="DashboardTC" duration-ms="9065" started-at="2019-10-13T12:49:14Z" finished-at="2019-10-13T12:49:23Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- DashboardTC -->
+      </class> <!-- PAYG_Simply.NoAlertsVOV -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
+</testng-results>
