@@ -1,4 +1,4 @@
-package pageObjects;
+package GeneralActions;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.support.ui.ExpectedConditions;
@@ -34,17 +34,11 @@ public class ActionClass {
 	    touchAction.longPress(PointOption.point(fromX, fromY)).moveTo(PointOption.point(toX, toY)).release().perform();
 	}
 	
-	
-	
  public static void wait (By webElement) {
 		WebDriverWait wait = new WebDriverWait(driver, 30);
 		wait.until(ExpectedConditions.visibilityOfElementLocated(webElement));	
 	 
  }
-
-
-
-
 
 }
 

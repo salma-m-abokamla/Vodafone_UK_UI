@@ -4,12 +4,12 @@ import org.testng.annotations.Test;
 
 import com.github.KhaldAttya.Aeye.Aeye;
 
+import GeneralActions.ActionClass;
+import General_Journeys.OpenApp;
+import General_Journeys.WelcomePayG;
 import io.appium.java_client.android.AndroidDriver;
-import pageObjects.ActionClass;
 import pageObjects.ObjectsRepo;
-import pageObjects.OpenApp;
 import pageObjects.ReadCapabilities;
-import pageObjects.WelcomePayG;
 
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Parameters;

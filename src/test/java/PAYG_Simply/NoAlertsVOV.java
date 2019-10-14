@@ -4,6 +4,9 @@ package PAYG_Simply;
 import org.testng.annotations.Test;
 import com.github.KhaldAttya.Aeye.Aeye;
 
+import GeneralActions.ActionClass;
+import General_Journeys.OpenApp;
+import General_Journeys.WelcomePayG;
 import io.appium.java_client.android.AndroidDriver;
 
 import static org.testng.Assert.fail;
@@ -11,12 +14,10 @@ import static org.testng.Assert.fail;
 import java.io.File;
 import java.io.IOException;
 import java.net.MalformedURLException;
-import pageObjects.OpenApp;
-import pageObjects.ActionClass;
-import pageObjects.ObjectsRepo;
 
+import pageObjects.ObjectsRepo;
 import pageObjects.ReadCapabilities;
-import pageObjects.WelcomePayG;
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
@@ -32,16 +33,16 @@ public class NoAlertsVOV {
 	
 	public AndroidDriver<?> driver;
 	boolean ResultFlag = true;
-	String MSSDIN ;
+	String MSSDIN,Server ;
 
 	  @BeforeTest
-	  @Parameters({"MSSDIN"})
+	  @Parameters({"MSSDIN","Server"})
   public  void beforeTest(String MSSDIN) throws InterruptedException {
 		ActionClass.setDriver(driver);
 		ObjectsRepo.setDriver(driver);
 		ActionClass.wait(ObjectsRepo.Set_Dev_Settings);
 	    OpenApp.setDriver(driver);
-	 	OpenApp.OpenAppFlow(MSSDIN);
+	 	OpenApp.OpenAppFlow(MSSDIN,Server);
 	 	ActionClass.wait(ObjectsRepo.Welcome_GetStarted_CTA);
 	 	WelcomePayG.setDriver(driver);
 	    WelcomePayG.WelcomePayGFlow();

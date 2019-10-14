@@ -1,4 +1,4 @@
-package pageObjects;
+package General_Journeys;
 
 import org.openqa.selenium.By;
 

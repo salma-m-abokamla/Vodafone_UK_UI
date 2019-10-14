@@ -58,6 +58,13 @@ public class ObjectsRepo {
     return element;
 
     }
+public static WebElement set_Server_SIT2 (AndroidDriver driver){
+	 
+	 element= driver.findElement(Server_SIT2);
+	 
+    return element;
+
+    }
 
 public static WebElement CloseVoV (AndroidDriver driver){
 	 

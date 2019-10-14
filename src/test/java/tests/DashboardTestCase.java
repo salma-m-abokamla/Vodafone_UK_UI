@@ -3,17 +3,17 @@ package tests;
 import org.testng.annotations.Test;
 import com.github.KhaldAttya.Aeye.Aeye;
 
+import GeneralActions.ActionClass;
+import General_Journeys.OpenApp;
+import General_Journeys.WelcomePayG;
 import io.appium.java_client.android.AndroidDriver;
 import java.io.File;
 import java.io.IOException;
 import java.net.MalformedURLException;
 
-import pageObjects.ActionClass;
 import pageObjects.ObjectsRepo;
-import pageObjects.OpenApp;
-
 import pageObjects.ReadCapabilities;
-import pageObjects.WelcomePayG;
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
@@ -29,17 +29,16 @@ public class DashboardTestCase {
 	
 	public AndroidDriver<?> driver;
 	boolean isDisplayed = true;
-	String MSSDIN ;
-	WebElement Server ;
+	String MSSDIN,Server ;
 	
- @Parameters({"MSSDIN"})
+ @Parameters({"MSSDIN" , "Server"})
   @BeforeTest
   public  void beforeTest(String MSSDIN) throws InterruptedException {
-	   ActionClass.setDriver(driver);
+	    ActionClass.setDriver(driver);
 		ObjectsRepo.setDriver(driver);
 		ActionClass.wait(ObjectsRepo.Set_Dev_Settings);    
 	    OpenApp.setDriver(driver);
-	 	OpenApp.OpenAppFlow(MSSDIN);
+	 	OpenApp.OpenAppFlow(MSSDIN,Server);
 	 	WelcomePayG.setDriver(driver);
 	    WelcomePayG.WelcomePayGFlow();
 	    ActionClass.wait(ObjectsRepo.VfLogoImageView);
